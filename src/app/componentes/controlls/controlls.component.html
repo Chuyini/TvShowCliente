@@ -1,0 +1,44 @@
+
+<button (click)="OnUnSetAllAs()"><H2>Deselecionar todos</H2></button>
+<button (click)="OnSetAllAs()"><h2>Seleccionar todos</h2></button>
+<button (click)="OnInvert()"><h2>Invertir</h2></button>
+<input type="text" [(ngModel)]="searchTerm">
+<button (click)="OnClickSearch()">Buscar</button>
+
+
+<br><br>
+<h2 style="text-align: center;">Si desea actualizar, llene los datos primero y defina el ID</h2>
+
+
+<div class="form-container">
+    <label for="">Ingrese Id</label>
+    <input type="text" [(ngModel)]="Id">
+    <button style="display: inline;"(click)="eliminar()">EliminarID</button>
+    <button style="display: inline;" (click)="actualizar()">Actualizar</button>
+
+
+</div>
+
+<div class="form-container">
+    <label for="">Nombre</label>
+    <input type="text" [(ngModel)]="nombre">
+    <label for="">Imagen</label>
+    <input type="text" [(ngModel)]="imagen">
+    <label for="">año</label>
+    <input type="text" [(ngModel)]="anio">
+    <label for="">episodios</label>
+    <input type="text" [(ngModel)]="episodios">
+
+    <br>
+
+    <button style="display: inline;" (click)="subir()">Subir</button>
+    
+
+   
+    
+    
+</div>
+
+
+
+

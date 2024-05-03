@@ -1,0 +1,13 @@
+<div [ngClass]="{'clase':true, 'colorear': pelicula.isSelected, 'quitar':pelicula.dontAppear==true}" style="margin-top: 40PX;" (click)="cambiar()" > 
+
+    <button (click)="desappear()" style="width: 50px; height:50px;"><h2>X</h2></button>
+    <h2>{{pelicula.title}}</h2>
+    <img src="{{pelicula.image}}">
+    <p>{{pelicula.episodes}}</p>
+    <p>{{pelicula.year}}</p>
+    <button [routerLink]="['./../detail']" (click)="detalle(pelicula.id)">
+        detalle
+    </button>
+        
+    
+</div>   

@@ -1,0 +1,17 @@
+form{
+    align-items: center;
+    padding: 2%;
+
+    margin-left: 550px;
+    margin-top: 200px;
+    
+}
+
+form label{
+
+    margin-right: 10px
+}
+
+body{
+    align-items: center;
+}
